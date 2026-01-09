@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { courses } from "../data/data";
 
 export default function Corsi() {
@@ -40,9 +41,12 @@ export default function Corsi() {
               <p className="mt-2 font-semibold text-(--color-accent)">
                 {course.duration}
               </p>
-              <a className="mt-4 inline-block px-4 py-2 bg-(--color-accent) text-black rounded-xl font-semibold hover:bg-(--color-accent-hover) transition">
+              <Link
+                className="mt-4 inline-block px-4 py-2 bg-(--color-accent) text-black rounded-xl font-semibold hover:bg-(--color-accent-hover) transition"
+                to={"/contatti"}
+              >
                 Prenota prova gratuita
-              </a>
+              </Link>
             </div>
           ))}
         </div>

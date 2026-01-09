@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { trainers } from "../data/data";
 
 export default function PersonalTrainer() {
@@ -18,12 +19,12 @@ export default function PersonalTrainer() {
             >
               <p className="text-(--color-text-primary) font-bold">{t.name}</p>
               <p className="text-(--color-text-secondary)">{t.specialty}</p>
-              <a
-                href="/contatti"
+              <Link
+                to={"/contatti"}
                 className="mt-4 inline-block px-4 py-2 bg-(--color-accent) text-black rounded-xl font-semibold hover:bg-(--color-accent-hover) transition"
               >
                 Contatta {t.name}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PlanComparator from "../components/ui/PlanComparator";
 import { metodoCoreLab, testimonials } from "../data/data";
 
@@ -19,18 +20,24 @@ export default function Home() {
             costruito su di te.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <a className="bg-(--color-accent) text-black px-6 py-3 rounded-xl font-bold hover:bg-(--color-accent-hover) transition">
+            <Link
+              className="bg-(--color-accent) text-black px-6 py-3 rounded-xl font-bold hover:bg-(--color-accent-hover) transition"
+              to={"/corsi"}
+            >
               Scopri i percorsi
-            </a>
-            <a className="border border-(--color-border) px-6 py-3 rounded-xl text-(--color-text-primary) hover:bg-white/10 transition">
+            </Link>
+            <Link
+              className="border border-(--color-border) px-6 py-3 rounded-xl text-(--color-text-primary) hover:bg-white/10 transition"
+              to={"/contatti"}
+            >
               Prenota prova gratuita
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Metodo CoreLab */}
-      <section className="px-6 py-16">
+      <section className="px-6 py-16 ">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
           {metodoCoreLab.map((item) => (
             <div
