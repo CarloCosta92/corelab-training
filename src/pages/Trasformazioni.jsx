@@ -12,14 +12,41 @@ export default function Trasformazioni() {
           {transformations.map((t) => (
             <div
               key={t.name}
-              className="bg-(--color-bg-surface) p-6 rounded-2xl border border-(--color-border) flex flex-col"
+              className="bg-(--color-bg-surface) p-6 rounded-2xl border border-(--color-border) flex flex-col h-full"
             >
-              <p className="text-(--color-text-primary) font-bold">{t.name}</p>
-              <div className="mt-2 flex gap-2">
-                <img src={t.before} alt="Prima" className="w-1/2 rounded-xl" />
-                <img src={t.after} alt="Dopo" className="w-1/2 rounded-xl" />
+              {/* Nome cliente */}
+              <p className="text-(--color-text-primary) font-bold text-lg">
+                {t.name}
+              </p>
+
+              {/* Immagini con etichette */}
+              <div className="mt-4 flex gap-2">
+                <div className="flex-1 flex flex-col items-center">
+                  <span className="text-sm font-semibold text-(--color-text-secondary) mb-1">
+                    Prima
+                  </span>
+                  <img
+                    src={t.before}
+                    alt="Prima"
+                    className="w-full h-48 object-cover rounded-xl"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col items-center">
+                  <span className="text-sm font-semibold text-(--color-text-secondary) mb-1">
+                    Dopo
+                  </span>
+                  <img
+                    src={t.after}
+                    alt="Dopo"
+                    className="w-full h-48 object-cover rounded-xl"
+                  />
+                </div>
               </div>
-              <p className="mt-2 text-(--color-text-secondary)">{t.desc}</p>
+
+              {/* Descrizione */}
+              <p className="mt-4 text-(--color-text-secondary) text-sm flex-1">
+                {t.desc}
+              </p>
             </div>
           ))}
         </div>

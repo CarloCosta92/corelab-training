@@ -14,10 +14,44 @@ export const testimonials = [
 
 // Piani / Abbonamenti
 export const plans = [
-  { name: "Base", price: "29€/mese", features: ["Accesso sala", "1 corso a settimana"] },
-  { name: "Pro", price: "49€/mese", features: ["Accesso illimitato", "3 corsi a settimana", "Supporto personal trainer"] },
-  { name: "Premium", price: "69€/mese", features: ["Tutto incluso", "Programma personalizzato", "Check mensile risultati"] },
+  {
+    name: "Base",
+    price: "29€/mese",
+    features: [
+      "Accesso sala pesi",
+      "1 corso a settimana a scelta",
+      "Area cardio",
+      "Spogliatoi e docce",
+      "Supporto base via email",
+    ],
+  },
+  {
+    name: "Pro",
+    price: "49€/mese",
+    features: [
+      "Accesso illimitato a tutti gli spazi",
+      "3 corsi a settimana a scelta",
+      "Supporto personal trainer",
+      "Programmazione allenamenti personalizzata",
+      "Accesso a workshop mensili",
+      "Consulenza nutrizionale base",
+    ],
+  },
+  {
+    name: "Premium",
+    price: "69€/mese",
+    features: [
+      "Tutto incluso dal piano Pro",
+      "Programma personalizzato completo",
+      "Check mensile dei risultati",
+      "Sessioni di coaching individuali",
+      "Consulenza nutrizionale avanzata",
+      "Accesso prioritario a eventi e corsi speciali",
+      "Kit benessere CoreLab",
+    ],
+  },
 ];
+
 
 // Corsi
 export const courses = [
@@ -40,9 +74,9 @@ export const trainers = [
 
 // Trasformazioni clienti (fake immagini)
 export const transformations = [
-  { name: "Marco", before: "https://via.placeholder.com/300x200?text=Prima", after: "https://via.placeholder.com/300x200?text=Dopo", desc: "-10kg in 5 mesi con allenamenti mirati" },
-  { name: "Giulia", before: "https://via.placeholder.com/300x200?text=Prima", after: "https://via.placeholder.com/300x200?text=Dopo", desc: "Tonificazione completa e aumento forza" },
-  { name: "Luca", before: "https://via.placeholder.com/300x200?text=Prima", after: "https://via.placeholder.com/300x200?text=Dopo", desc: "Ricomposizione corporea in 4 mesi" },
+  { name: "Marco", before: "https://media.gettyimages.com/id/1404193366/it/foto/smiling-man-standing.jpg?s=170667a&w=gi&k=20&c=F9XCYgoiyuVQ0NuB2R8b5sD0fSw1kjkePgm3pbp42mE=", after: "https://media.gettyimages.com/id/171246107/it/foto/un-belluomo-giovane-tifo-isolato.jpg?s=612x612&w=gi&k=20&c=fjTfDRxX-8yX7Kk_CB9JDAUoP1krnSCr70ZAYN2Abc4=", desc: "-10kg in 5 mesi con allenamenti mirati" },
+  { name: "Giulia", before: "https://media.gettyimages.com/id/184292053/it/foto/donna-in-piedi-con-le-braccia-incrociate.jpg?s=612x612&w=gi&k=20&c=gn34sM8g4T7zYfoV0DxR63uq4suPZOYxsrCi5oWXHdc=", after: "https://thumbs.dreamstime.com/b/donna-diritta-35581076.jpg", desc: "Tonificazione completa e aumento forza" },
+  { name: "Luca", before: "https://media.istockphoto.com/id/1135773946/it/foto/ritratto-a-figura-intera-di-giovane-in-piedi-su-sfondo-bianco.jpg?s=612x612&w=0&k=20&c=DxuYPHKQnHqKEDoF2cV-DiUkGRF_pG5RZonGXAhDLKo=", after: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-GQYauLuqfm374bFHQODSLDcHZUUd2yyuXc1kG5_nRA&s", desc: "Ricomposizione corporea in 4 mesi" },
 ];
 
 // Contatti

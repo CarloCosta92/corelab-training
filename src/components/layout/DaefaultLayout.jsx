@@ -5,7 +5,7 @@ import CTAWhatsApp from "./CTAWhatsApp";
 
 export default function DefaultLayout() {
   return (
-    <div className="min-h-screen bg-neutral-950 text-white flex flex-col">
+    <div className="min-h-screen bg-(--color-bg-main) text-white flex flex-col">
       <Navbar />
       <main className="flex-1">
         <Outlet />
