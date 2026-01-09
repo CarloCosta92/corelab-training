@@ -20,12 +20,10 @@ export default function Trasformazioni() {
                 className="bg-(--color-bg-surface) p-6 rounded-2xl border border-(--color-border) flex flex-col h-full backdrop-blur-md"
                 style={{ backgroundColor: "var(--color-bg-surface-light)" }}
               >
-                {/* Nome cliente */}
                 <p className="text-(--color-text-primary) font-bold text-lg">
                   {t.name}
                 </p>
 
-                {/* Immagini con etichette */}
                 <div className="mt-4 flex gap-2">
                   <div className="flex-1 flex flex-col items-center">
                     <span className="text-sm font-semibold text-(--color-text-secondary) mb-1">
@@ -49,7 +47,6 @@ export default function Trasformazioni() {
                   </div>
                 </div>
 
-                {/* Descrizione */}
                 <p className="mt-4 text-(--color-text-secondary) text-sm flex-1">
                   {t.desc}
                 </p>

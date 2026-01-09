@@ -1,16 +1,38 @@
 // Metodo CoreLab
 export const metodoCoreLab = [
-  { title: "Analisi", desc: "Valutiamo postura, forza e obiettivi prima di iniziare il percorso." },
-  { title: "Programmazione", desc: "Allenamenti costruiti su misura, non schede standard." },
-  { title: "Progressione", desc: "Monitoriamo i risultati e adattiamo il percorso per massimizzare l’efficacia." },
+  { 
+    title: "Analisi", 
+    desc: "Valutiamo postura, forza e obiettivi prima di iniziare il percorso." 
+  },
+  { 
+    title: "Programmazione", 
+    desc: "Allenamenti costruiti su misura, non schede standard." 
+  },
+  { 
+    title: "Progressione", 
+    desc: "Monitoriamo i risultati e adattiamo il percorso per massimizzare l’efficacia." 
+  },
+  { 
+    title: "Nutrizione", 
+    desc: "Consigli alimentari personalizzati per supportare i tuoi allenamenti." 
+  },
+  { 
+    title: "Follow-up", 
+    desc: "Check periodici con il tuo trainer per ottimizzare ogni fase del percorso." 
+  },
 ];
+
 
 // Testimonianze clienti
 export const testimonials = [
   { name: "Marco, 38 anni", desc: "-10kg in 5 mesi. Allenamenti chiari e seguiti." },
   { name: "Giulia, 30 anni", desc: "Tonificazione e forza, con percorso personalizzato." },
   { name: "Luca, 42 anni", desc: "Ricomposizione corporea in 4 mesi." },
+  { name: "Sara, 27 anni", desc: "Migliorata resistenza e postura, più energia nella vita quotidiana." },
+  { name: "Alessandro, 35 anni", desc: "-8kg e aumento della massa muscolare in 4 mesi." },
+  { name: "Chiara, 31 anni", desc: "Percorso su misura per tonificazione e allenamento funzionale." },
 ];
+
 
 // Piani / Abbonamenti
 export const plans = [

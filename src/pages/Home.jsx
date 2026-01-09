@@ -6,13 +6,12 @@ import bg from "../assets/background.jpg";
 export default function Home() {
   return (
     <div className="flex flex-col gap-16">
-      {/* Hero */}
       <section
-        className="relative h-[90vh] flex items-center justify-center text-center bg-(--color-bg-main) bg-cover  bg-center"
+        className="relative h-[90vh] flex items-center justify-center text-center bg-(--color-bg-main) bg-cover  bg-cente"
         style={{ backgroundImage: `url(${bg})`, minHeight: `80vh` }}
       >
         <div className="absolute inset-0 opacity-60 bg-black"></div>
-        {/* Container centrale */}
+
         <div className="relative z-10 px-6 w-full max-w-7xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-extrabold text-(--color-text-primary) leading-tight">
             Il tuo corpo è un sistema.
@@ -40,7 +39,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Metodo CoreLab */}
       <section className="px-6 py-16 ">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
           {metodoCoreLab.map((item) => (
@@ -57,7 +55,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Prova Sociale */}
       <section className="px-6 py-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold mb-6 text-(--color-text-primary)">

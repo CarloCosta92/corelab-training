@@ -9,13 +9,11 @@ export default function PersonalTrainer() {
       style={{ backgroundImage: `url(${bg})`, minHeight: `80vh` }}
     >
       <div className="px-6 py-16">
-        {/* Container centrale */}
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 text-(--color-text-primary)">
             I nostri Personal Trainer
           </h1>
 
-          {/* Griglia card */}
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {trainers.map((t) => (
               <div

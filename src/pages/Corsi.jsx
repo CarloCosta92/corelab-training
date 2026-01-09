@@ -13,7 +13,6 @@ export default function Corsi() {
           I nostri corsi
         </h1>
 
-        {/* Card corsi */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {courses.map((course) => (
             <div

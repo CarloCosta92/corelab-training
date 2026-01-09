@@ -17,7 +17,6 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-(--color-border)  backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        {/* Brand */}
         <Link
           to="/"
           className="text-lg font-bold tracking-wide text-(--color-text-primary)"
@@ -25,7 +24,6 @@ export default function Navbar() {
           Core<span className="text-(--color-accent)">Lab</span> Training
         </Link>
 
-        {/* Navigation desktop */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
           {navItems.map((item) => (
             <NavLink
@@ -42,7 +40,6 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA desktop */}
         <div className="hidden md:block">
           <Link
             to="https://wa.me/393331234567"
@@ -52,7 +49,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Hamburger mobile */}
         <div className="md:hidden flex items-center">
           <button onClick={() => setOpen(!open)}>
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -60,7 +56,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={`md:hidden transition-all duration-300 overflow-hidden ${
           open ? "max-h-screen" : "max-h-0"
@@ -71,7 +66,7 @@ export default function Navbar() {
             <NavLink
               key={item.to}
               to={item.to}
-              onClick={() => setOpen(false)} // chiude il menu al click
+              onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-(--color-accent)"
@@ -82,7 +77,6 @@ export default function Navbar() {
             </NavLink>
           ))}
 
-          {/* CTA mobile */}
           <Link
             to="https://wa.me/393331234567"
             onClick={() => setOpen(false)}

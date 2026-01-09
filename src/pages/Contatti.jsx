@@ -35,7 +35,6 @@ export default function Contatti() {
           </h1>
 
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Form */}
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
               <input
                 type="text"
@@ -75,7 +74,6 @@ export default function Contatti() {
               </button>
             </form>
 
-            {/* Info contatto */}
             <div className="flex flex-col gap-4 text-(--color-text-primary)">
               <p>
                 <strong>Telefono:</strong> {contatti.telefono}
