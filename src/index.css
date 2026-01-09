@@ -2,20 +2,25 @@
 
 /* Palette CoreLab Training */
 :root {
-    --color-bg-main: #0f0f0f;
     /* Sfondo principale */
+    --color-bg-main: #0f0f0f;
+
+    /* Sfondo delle sezioni scure */
     --color-bg-surface: #1a1a1a;
-    /* Card / section */
+
+    /* Sfondo trasparente per card sopra immagini */
+    --color-bg-surface-light: rgba(255, 255, 255, 0.15);
+
+    /* Testo principale e secondario */
     --color-text-primary: #ffffff;
-    /* Testo principale */
     --color-text-secondary: #c0c0c0;
-    /* Testo secondario */
-    --color-accent: #22c55e;
+
     /* Verde CoreLab */
+    --color-accent: #22c55e;
     --color-accent-hover: #4ade80;
-    /* Verde hover */
+
+    /* Border bianco trasparente */
     --color-border: #ffffff33;
-    /* Bianco 20% */
 }
 
 @keyframes slide-in {

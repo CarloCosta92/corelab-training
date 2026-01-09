@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import PlanComparator from "../components/ui/PlanComparator";
 import { metodoCoreLab, testimonials } from "../data/data";
+import bg from "../assets/background.jpg";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-16">
       {/* Hero */}
-      <section className="relative h-[90vh] flex items-center justify-center text-center bg-(--color-bg-main)">
+      <section
+        className="relative h-[90vh] flex items-center justify-center text-center bg-(--color-bg-main) bg-cover  bg-center"
+        style={{ backgroundImage: `url(${bg})`, minHeight: `80vh` }}
+      >
         <div className="absolute inset-0 opacity-60 bg-black"></div>
         {/* Container centrale */}
         <div className="relative z-10 px-6 w-full max-w-7xl mx-auto">

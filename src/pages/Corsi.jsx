@@ -1,36 +1,25 @@
 import { Link } from "react-router-dom";
 import { courses } from "../data/data";
+import bg from "../assets/bilancere.jpg";
 
 export default function Corsi() {
   return (
-    <div className="flex flex-col gap-16 px-6 py-16">
-      <div className="max-w-7xl mx-auto">
+    <div
+      className="flex-1 flex flex-col gap-16 px-6 py-16 bg-cover bg-center"
+      style={{ backgroundImage: `url(${bg})`, minHeight: `80vh` }}
+    >
+      <div className="max-w-7xl mx-auto flex-1">
         <h1 className="text-4xl font-bold mb-6 text-(--color-text-primary)">
           I nostri corsi
         </h1>
-
-        {/* Filtri */}
-        <div className="flex flex-wrap gap-4 mb-8">
-          <button className="px-4 py-2 rounded-xl bg-(--color-accent) text-black font-semibold hover:bg-(--color-accent-hover) transition">
-            Tutti
-          </button>
-          <button className="px-4 py-2 rounded-xl border border-(--color-border) text-(--color-text-primary) hover:bg-white/10 transition">
-            Forza
-          </button>
-          <button className="px-4 py-2 rounded-xl border border-(--color-border) text-(--color-text-primary) hover:bg-white/10 transition">
-            Cardio
-          </button>
-          <button className="px-4 py-2 rounded-xl border border-(--color-border) text-(--color-text-primary) hover:bg-white/10 transition">
-            Gruppo
-          </button>
-        </div>
 
         {/* Card corsi */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {courses.map((course) => (
             <div
               key={course.name}
-              className="bg-(--color-bg-surface) p-6 rounded-2xl border border-(--color-border)"
+              className="p-6 rounded-2xl border border-(--color-border) backdrop-blur-md"
+              style={{ backgroundColor: "var(--color-bg-surface-light)" }}
             >
               <h3 className="text-xl font-bold text-(--color-text-primary)">
                 {course.name}
