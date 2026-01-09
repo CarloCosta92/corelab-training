@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-16">
       {/* Hero */}
-      <section className="relative h-[80vh] flex items-center justify-center text-center bg-(--color-bg-main)">
+      <section className="relative h-[90vh] flex items-center justify-center text-center bg-(--color-bg-main)">
         <div className="absolute inset-0 opacity-60 bg-black"></div>
         {/* Container centrale */}
         <div className="relative z-10 px-6 w-full max-w-7xl mx-auto">

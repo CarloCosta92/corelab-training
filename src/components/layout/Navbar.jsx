@@ -4,8 +4,9 @@ const navItems = [
   { label: "Home", to: "/" },
   { label: "Corsi", to: "/corsi" },
   { label: "Personal Trainer", to: "/personal-trainer" },
-  { label: "Percorsi", to: "/piani" },
   { label: "Risultati", to: "/trasformazioni" },
+  { label: "Abbonamenti", to: "/abbonamenti" },
+  { label: "Contatti", to: "/contatti" },
 ];
 
 export default function Navbar() {
